@@ -12,6 +12,8 @@ body {
     display: flex;
     justify-content: center;
     list-style: none;
+    background-color: transparent;
+
 }
 
 .custom-navbar .nav-item {
@@ -20,47 +22,128 @@ body {
 
 .custom-navbar .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     padding: 10px;
-    transition: font-size 0.3s ease;
+    transition: font-size 0.5s ease;
     font-weight: bold;
 }
 
-.custom-navbar .nav-item:nth-child(4) .nav-link {
-    font-size: 24px; 
-}
-
-.custom-navbar .nav-item:nth-child(3), 
-.custom-navbar .nav-item:nth-child(5) .nav-link {
-    font-size: 20px; 
-}
-
-.custom-navbar .nav-item:nth-child(2), 
-.custom-navbar .nav-item:nth-child(6) .nav-link {
-    font-size: 18px; 
-}
-
 .custom-navbar .nav-item:nth-child(1), 
-.custom-navbar .nav-item:nth-child(7) .nav-link {
+.custom-navbar .nav-item:nth-child(4) .nav-link {
     font-size: 16px; 
 }
 
+.nav-item:nth-child(2){
+    font-size: 25px;
+}
+
 .custom-navbar .nav-link:hover {
-    font-size: 26px;
+    font-size: 35px;
     color: #0056b3; 
     transition: all 0.3s ease-in-out;
-}
-
-.navbar {
-    background-color: #333;
-}
-
-.navbar-brand {
-    color: #fff;
-    font-size: 28px;
 }
 
 body, html {
     height: 100%;
 }
+
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+	font-size: 16px;
+	margin: 0;
+	background: black;
+}
+
+.snow_wrap{
+	height: 100vh;
+	width: 100%;
+	background:url('../images/dk-mt.jpg');
+	background-size: cover;
+	background-position: center bottom; 
+	overflow: hidden;
+	position: relative;
+}
+
+.snow, .snow:before, .snow:after {
+  position: absolute;
+  top: -650px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: 
+  radial-gradient(4px 4px at 100px 50px, #fff , transparent), 
+  radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
+  radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
+  background-size: 650px 650px;
+  animation: snow 3s linear infinite;
+  content: "";
+}
+
+.snow:after {
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-duration: 6s;
+  animation-direction: reverse;
+}
+
+.snow:before {
+	margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-duration: 9s;
+  animation-direction: reverse;
+}
+
+@keyframes snow {
+  to {
+    transform: translateY(650px);
+  }
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  bottom: 500px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+p {
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+
+
 
