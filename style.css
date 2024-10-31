@@ -22,7 +22,7 @@ body {
 
 .custom-navbar .nav-link {
     text-decoration: none;
-    color: #ffffff;
+    color: black;
     padding: 10px;
     transition: font-size 0.5s ease;
     font-weight: bold;
@@ -57,7 +57,7 @@ body{
 	font-family: arial;
 	font-size: 16px;
 	margin: 0;
-	background: black;
+	background: white;
 }
 
 .snow_wrap{
@@ -145,5 +145,18 @@ p {
   margin: 10px 0 0;
 }
 
+.card_1{
+  background-color: white;
+  margin-top: 100px;
+  color: green;
+  text-align: left;
+}
 
+.card_2{
+  background-color: white;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  color: green;
+  text-align: right;
+}
 
