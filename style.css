@@ -1,173 +1,94 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+html,
+body {
+    background-color: #f4f4f9;
+    color: #2d2d2d;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.custom-navbar {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    background-color: transparent;
-
-}
-
-.custom-navbar .nav-item {
-    margin: 0 15px; 
-}
-
-.custom-navbar .nav-link {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    transition: font-size 0.5s ease;
-    font-weight: bold;
-}
-
-.nav-item:nth-child(2){
-    font-size: 25px;
-}
-
-.custom-navbar .nav-link:hover {
-    font-size: 35px;
-    color: #0056b3; 
-    transition: all 0.3s ease-in-out;
-}
-
-body, html {
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-*,*:after,*:before{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
-body{
-	font-family: arial;
-	font-size: 16px;
-	margin: 0;
-	background: white;
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
 }
 
-.snow_wrap{
-	height: 100vh;
-	width: 100%;
-	background:url('../images/dk-mt.jpg');
-	background-size: cover;
-	background-position: center bottom; 
-	overflow: hidden;
-	position: relative;
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
 }
 
-.snow, .snow:before, .snow:after {
-  position: absolute;
-  top: -650px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-image: 
-  radial-gradient(4px 4px at 100px 50px, #fff , transparent), 
-  radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
-  radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent), 
-  radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent), 
-  radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent), 
-  radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent), 
-  radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent), 
-  radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent), 
-  radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
-  background-size: 650px 650px;
-  animation: snow 3s linear infinite;
-  content: "";
+header p {
+    font-size: 1.2rem;
 }
 
-.snow:after {
-  margin-left: -250px;
-  opacity: 0.5;
-  filter: blur(2px);
-  animation-duration: 6s;
-  animation-direction: reverse;
+main {
+    padding: 30px;
+    flex: 1;
 }
 
-.snow:before {
-	margin-left: -350px;
-  opacity: 0.7;
-  filter: blur(1px);
-  animation-duration: 9s;
-  animation-direction: reverse;
+section h2 {
+    color: #3498db;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
-@keyframes snow {
-  to {
-    transform: translateY(650px);
-  }
+section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.hero {
-  position: relative;
-  text-align: center;
-  color: white;
-  bottom: 500px;
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.hero-image {
-  width: 100%;
-  height: auto;
+footer {
+    background-color: #3498db;
+    color: #ecf0f1;
+    padding: 15px 0;
+    text-align: center;
 }
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
-h1 {
-  font-size: 48px;
-  margin: 0;
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
 
-p {
-  font-size: 24px;
-  margin: 10px 0 0;
-}
+    header p {
+        font-size: 1rem;
+    }
 
-.card_1{
-  background-color: white;
-  margin-top: 100px;
-  color: green;
-  text-align: left;
-}
+    main {
+        padding: 20px;
+    }
 
-.card_2{
-  background-color: white;
-  margin-top: 200px;
-  margin-bottom: 50px;
-  color: green;
-  text-align: right;
-}
+    section h2 {
+        font-size: 1.5rem;
+    }
 
-.card_3{
-  background-color: white;
-  margin-top: 200px;
-  margin-bottom: 50px;
-  color: green;
-  text-align: left;
-}
+    section p {
+        font-size: 0.9rem;
+    }
 
-.card_4{
-  background-color: white;
-  margin-top: 200px;
-  margin-bottom: 50px;
-  color: green;
-  text-align: right;
+    footer p {
+        font-size: 0.8rem;
+    }
 }
 
