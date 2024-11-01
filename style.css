@@ -28,11 +28,6 @@ body {
     font-weight: bold;
 }
 
-.custom-navbar .nav-item:nth-child(1), 
-.custom-navbar .nav-item:nth-child(4) .nav-link {
-    font-size: 16px; 
-}
-
 .nav-item:nth-child(2){
     font-size: 25px;
 }
@@ -153,6 +148,22 @@ p {
 }
 
 .card_2{
+  background-color: white;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  color: green;
+  text-align: right;
+}
+
+.card_3{
+  background-color: white;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  color: green;
+  text-align: left;
+}
+
+.card_4{
   background-color: white;
   margin-top: 200px;
   margin-bottom: 50px;
