@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
-
+/*Importing my font*/
 html,
 body {
     background-color: #f4f4f9;
@@ -65,7 +65,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Responsive Adjustments */
+/* I still don't understand responsiveness */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
